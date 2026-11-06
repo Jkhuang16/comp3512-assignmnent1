@@ -39,7 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const img = document.createElement("img");
         img.src = eachProduct.thumbnail
 
-        
+        //Display the product id in a simple alert when the thumbnail is clicked
+        img.addEventListener("click", () => {
+            alert(eachProduct.id);
+        })
+
+        //Display the product id and title ina  simple alert when the Add to Cart is clicked
+
 
         //Adding details to each card
         card.appendChild(title);
