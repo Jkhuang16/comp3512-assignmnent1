@@ -23,8 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
         //   },
     //looping through first 20 products object
     for(let eachProduct of first20Products){
-        const section = document.createElement("#products")
-
         //Main cards
         const card = document.createElement("div");
         card.classList.add("product-card");
@@ -37,8 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const price = document.createElement("p");
         price.textContent = "$" + eachProduct.price.toFixed(2);
 
+        //Thumbnail image
+        const img = document.createElement("img");
+        img.src = eachProduct.thumbnail
+
+
+        //Adding details to each card
         card.appendChild(title);
         card.appendChild(price);
+        card.appendChild(img);
 
+        //Adding each card into productSquare
+        productSquare.appendChild(card);
     }
 })
