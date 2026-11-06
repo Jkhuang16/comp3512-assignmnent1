@@ -44,13 +44,20 @@ document.addEventListener("DOMContentLoaded", () => {
             alert(eachProduct.id);
         })
 
-        //Display the product id and title ina  simple alert when the Add to Cart is clicked
+        //Add to Cart button
+        const btn = document.createElement("button");
+        btn.textContent = "+";
 
+        //Display the product id and title ina  simple alert when the Add to Cart is clicked
+        btn.addEventListener("click", () => {
+            alert("Product id: " + eachProduct.id + " Title is: " + eachProduct.title);
+        })
 
         //Adding details to each card
         card.appendChild(title);
         card.appendChild(price);
         card.appendChild(img);
+        card.appendChild(btn);
 
         //Adding each card into productSquare
         productSquare.appendChild(card);
