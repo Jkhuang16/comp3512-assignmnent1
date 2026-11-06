@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const productSquare = document.querySelector("#products");
 
     //Isolate the first 20 products to display from the provided JSON file
-    const first20Products = config.slice(0,20);
+    const first20Products = config.product.slice(0,20);
 
     console.log(first20Products);
 
