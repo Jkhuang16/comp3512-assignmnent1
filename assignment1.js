@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const img = document.createElement("img");
         img.src = eachProduct.thumbnail
 
+        
 
         //Adding details to each card
         card.appendChild(title);
