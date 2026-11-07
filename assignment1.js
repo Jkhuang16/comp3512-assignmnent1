@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.classList.add("product-card");
 
         //Title
-        const title = document.createElement("h3");
+        const title = document.createElement("p");
         title.textContent = eachProduct.title;
 
         //Price to 2 decimal points
@@ -54,10 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
         })
 
         //Adding details to each card
+        card.appendChild(img);
         card.appendChild(title);
         card.appendChild(price);
-        card.appendChild(img);
         card.appendChild(btn);
+        
 
         //Adding each card into productSquare
         productSquare.appendChild(card);
